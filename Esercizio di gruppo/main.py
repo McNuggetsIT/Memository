@@ -1,6 +1,6 @@
 from moduli.elaboratore_statistico import ElaboratoreStatistico as es
 from moduli.gestorematrice import GestoreMatrice as gm
-from moduli.elaboratoreMatematico import ElaboratoreMatematico as em
+from moduli.elaboratore_matematico import ElaboratoreMatematico as em
 from moduli.filtromatrice import FiltroMatrice as fm
 
 matrice = [
@@ -28,8 +28,7 @@ while True:
     scelta = input("Seleziona un'opzione: ")
 
     if scelta == "1":
-        gm.stampa_matrice(matrice) 
-
+        gm.stampa_matrice(matrice)
     elif scelta == "2":
         gm.valida_matrice(matrice)
         
@@ -37,22 +36,17 @@ while True:
         es.trova_massimo(matrice)
     elif scelta == "4":
         es.media_riga(matrice)
-        pass
     elif scelta == "5":
         fm.azzera_negativi(matrice)
-        pass
 
     elif scelta == "6":
         fm.appiattisci(matrice)
-        pass
 
     elif scelta == "7":
         em.trasponi(matrice)
-        pass
-
+        
     elif scelta == "8":
         em.moltiplica_per_scalare(matrice)
-        pass
 
     elif scelta == "0":
         print("Uscita dal programma...")

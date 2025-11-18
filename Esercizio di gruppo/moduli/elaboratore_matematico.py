@@ -1,4 +1,4 @@
-from gestorematrice import GestoreMatrice
+from moduli.gestorematrice import GestoreMatrice
 
 class ElaboratoreMatematico(GestoreMatrice):
     
